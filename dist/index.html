@@ -2,10 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>Leader board</title>
 <script defer src="main.js"></script></head>
 <body>
-    <h1>Hello webpack!</h1>
+    <div class="container">
+        <header>
+            <h1>
+                Leader board
+            </h1>
+        </header>
+        <main>
+            <div class="container_main">
+                <div class="recent_score">
+                    <div class="title">
+                        <h2>Recent scores</h2>
+                        <button class="refresh">refresh</button>
+                    </div>
+                    <div class="score">
+                        <ul>
+                            <li>Name: 100</li>
+                            <li>Name: 20</li>
+                            <li>Name: 50</li>
+                            <li>Name: 78</li>
+                            <li>Name: 125</li>
+                            <li>Name: 77</li>
+                            <li>Name: 42</li>
+                            <li>Name: 42</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="add_score">
+                   <div class="title_form">
+                    <h2>Add your score</h2>
+                   </div>
+                   <form action="submit">
+                    <input type="text",class = 'your_score', required, placeholder="your name"> <br><br>
+                    <input type="text",class = 'your_score', required, placeholder="your score"><br><br>
+                    <button type = 'submit' class="submit_btn">submit</button>
+                   </form>
+                </div>
+            </div>
+            
+        </main>
+
+        <footer></footer>
+        
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
