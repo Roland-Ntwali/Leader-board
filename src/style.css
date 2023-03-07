@@ -1,9 +1,11 @@
 .container {
   border: 2px solid black;
   width: 95%;
-  margin: 20px;
+  margin: 20px auto;
   padding: 20px;
+
   /* overflow: scroll; */
+  height: 400px;
 }
 
 .container_main {
