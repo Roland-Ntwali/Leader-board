@@ -1,9 +1,9 @@
 .container {
   border: 2px solid black;
-  width: 50%;
+  width: 95%;
   margin: 20px;
   padding: 20px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .container_main {
