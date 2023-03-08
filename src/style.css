@@ -1,0 +1,40 @@
+.container {
+  border: 2px solid black;
+  width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+
+  /* overflow: scroll; */
+  height: 400px;
+}
+
+.container_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.score {
+  border: 2px solid black;
+}
+
+li:nth-child(even) {
+  background-color: #fff;
+}
+
+li:nth-child(odd) {
+  background-color: #eee;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
