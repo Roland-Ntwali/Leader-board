@@ -1,10 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+}
+
+.header {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.recent {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 .container {
   border: 2px solid black;
   width: 95%;
   margin: 20px auto;
   padding: 20px;
   overflow: scroll;
-  height: 400px;
+  height: 600px;
 }
 
 .container_main {
@@ -15,13 +34,32 @@
 
 .title {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 30px;
+  align-items: first baseline;
+}
+
+.refresh {
+  box-shadow: 2px 2px black;
+  width: 70px;
+  height: 25px;
+}
+
+.add_score {
+  margin-bottom: 20px;
+}
+
+#players_list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .score {
   border: 2px solid black;
+  display: flex;
+  height: 265px;
+  overflow: scroll;
 }
 
 li:nth-child(even) {
@@ -32,8 +70,25 @@ li:nth-child(odd) {
   background-color: #eee;
 }
 
+#players_list li {
+  display: flex;
+  padding: 6px;
+}
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.submit_button {
+  box-shadow: 2px 2px black;
+  width: 70px;
+  height: 25px;
+  float: right;
+}
+
+.your_score {
+  height: 30px;
+  padding-left: 4px;
 }
