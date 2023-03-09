@@ -5,43 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Leader board</title>
+    <title>Leaderboard</title>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>
-                Leader board
+                Leaderboard
             </h1>
         </header>
         <main>
             <div class="container_main">
-                <div class="recent_score">
+                <div class="recent_score_part">
                     <div class="title">
                         <h2>Recent scores</h2>
-                        <button type="button" class="refresh">refresh</button>
+                        <button  type="button" class="refresh" >refresh</button>
                     </div>
                     <div class="score">
-                        <ul>
-                            <li>Name: 100</li>
-                            <li>Name: 20</li>
-                            <li>Name: 50</li>
-                            <li>Name: 78</li>
-                            <li>Name: 125</li>
-                            <li>Name: 77</li>
-                            <li>Name: 42</li>
-                            <li>Name: 42</li>
+                        <ul id="players_list">
+                            <!-- dynamic part -->
                         </ul>
                     </div>
                 </div>
-                <div class="add_score">
+                <div class="add_your_score">
                    <div class="title_form">
                     <h2>Add your score</h2>
                    </div>
-                   <form action="submit">
-                    <input type="text",class = 'your_score', required, placeholder="your name"> <br><br>
-                    <input type="number",class = 'your_score', required, placeholder="your score"><br><br>
-                    <button type = "submit" class="submit_btn">submit</button>
+                   <form>
+                    <input type="text" class = 'your_score'  required  placeholder="your name" name="name"> <br><br>
+                    <input type="number" class = 'your_score'  required  placeholder="your score" name="score"><br><br>
+                    <button type = 'submit' class="submit_button">submit</button>
+                    <p class="message"></p>
                    </form>
                 </div>
             </div>
